@@ -79,14 +79,15 @@ body{
 }
 
 .profile-photo img {
-    height: 6rem;
+    height: 8rem;
 }
 
 .instagramlogin1 {
     background-color: #0095f6;
     color: white;
-    padding: 8px;
+    padding: 10px;
     border-radius: 4px;
+    
 
 }
 
@@ -132,4 +133,30 @@ body{
 
 .app-download:nth-child(2) {
     background-image: url('botao_playstore.png') ;
+}
+/*  media queries */
+/* setando responsividade para cel e tablet para até 1024p*/
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+}
+@media (max-width: 650px) {
+   body{
+       background-color: white;
+   }
+    .instagram-wrapper {
+    width: 90%;
+    }
+    .instagram-phone {
+        display: none;
+    }
+    .instagram-continue {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
 }
